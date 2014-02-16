@@ -13,7 +13,7 @@
 	/*
 	 * Specify the autoload method
 	 */
-    spl_autoload_register("bootstrap::autoload");
+	spl_autoload_register("bootstrap::autoload");
 	
 	/*
 	 * Base bootstrap class for default autoload method.
