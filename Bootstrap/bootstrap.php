@@ -8,7 +8,14 @@
 	/*
 	 * Assume you store your models in a models folder
 	 */
-	set_include_path(get_include_path().PATH_SEPARATOR."models");
+
+	$locations	= array(get_include_path(),
+				"models",
+				"src"
+				);
+
+	$include_path = implode(":", $locations);
+	set_include_path($include_path);
 
 	/*
 	 * Specify the autoload method
